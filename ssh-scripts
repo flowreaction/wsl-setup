@@ -1,4 +1,8 @@
-## SSH agent
+
+#Setting less annoying permissions
+umask 077
+
+# SSH agent
 sshenv=~/.ssh/agent.env
 
 agent_load_sshenv () { test -f "$sshenv" && . "$sshenv" >| /dev/null ; }

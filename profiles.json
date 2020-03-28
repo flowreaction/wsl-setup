@@ -1,27 +1,22 @@
+
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
-    "defaultProfile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+    "defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+    "initialCols": 140,
+    "initialRows": 35,
 
     "profiles":
     {
         "defaults":
         {
             // Put settings here that you want to apply to all profiles
-            "fontFace": "Cascadia Code"
         },
         "list":
         [
-            {
-                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-                "hidden": false,
-                "name": "Debian",
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\Debian\\home\\r"
-            },
             {
                 // Make changes here to the powershell.exe profile
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -41,17 +36,156 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+                "hidden": false,
+                "name": "Ubuntu-18.04",
+                "source": "Windows.Terminal.Wsl",
+                "acrylicOpacity": 0.85,
+                "useAcrylic": true,
+                "cursorShape": "vintage",
+                "fontFace": "Cascadia Code PL", 
+                "startingDirectory": "//wsl$/Ubuntu/home/florian",
+                // "experimental.retroTerminalEffect": true,
+                "colorScheme": "Argonaut",
+                "icon": "C:/Users/flori/OneDrive/Bilder/icons/ubuntuIcon.png"
             }
         ]
     },
 
     // Add custom color schemes to this array
-    "schemes": [],
+    "schemes": [
+        {
+            "name": "SeaShells",
+            "black": "#17384c",
+            "red": "#d15123",
+            "green": "#027c9b",
+            "yellow": "#fca02f",
+            "blue": "#1e4950",
+            "purple": "#68d4f1",
+            "cyan": "#50a3b5",
+            "white": "#deb88d",
+            "brightBlack": "#434b53",
+            "brightRed": "#d48678",
+            "brightGreen": "#628d98",
+            "brightYellow": "#fdd39f",
+            "brightBlue": "#1bbcdd",
+            "brightPurple": "#bbe3ee",
+            "brightCyan": "#87acb4",
+            "brightWhite": "#fee4ce",
+            "background": "#09141b",
+            "foreground": "#deb88d"
+        },
+        {
+            "name": "N0tch2k",
+            "black": "#383838",
+            "red": "#a95551",
+            "green": "#666666",
+            "yellow": "#a98051",
+            "blue": "#657d3e",
+            "purple": "#767676",
+            "cyan": "#c9c9c9",
+            "white": "#d0b8a3",
+            "brightBlack": "#474747",
+            "brightRed": "#a97775",
+            "brightGreen": "#8c8c8c",
+            "brightYellow": "#a99175",
+            "brightBlue": "#98bd5e",
+            "brightPurple": "#a3a3a3",
+            "brightCyan": "#dcdcdc",
+            "brightWhite": "#d8c8bb",
+            "background": "#222222",
+            "foreground": "#a0a0a0"
+        },
+        {
+            "name": "MaterialOcean",
+            "black": "#546e7a",
+            "red": "#ff5370",
+            "green": "#444b39",
+            "yellow": "#ffcb6b",
+            "blue": "#84abff",
+            "purple": "#c792ea",
+            "cyan": "#89ddff",
+            "white": "#ffffff",
+            "brightBlack": "#546e7a",
+            "brightRed": "#ff5370",
+            "brightGreen": "#c3e88d",
+            "brightYellow": "#ffcb6b",
+            "brightBlue": "#82aaff",
+            "brightPurple": "#c792ea",
+            "brightCyan": "#89ddff",
+            "brightWhite": "#ffffff",
+            "background": "#0f111a",
+            "foreground": "#8f93a2"
+        },
+        {
+            "background": "#002B36",
+            "brightBlack": "#073642",
+            "brightBlue": "#268BD2",
+            "black": "#002B36",
+            "blue": "#839496",
+            "cyan": "#93A1A1",
+            "green": "#586E75",
+            "purple": "#6C71C4",
+            "red": "#CB4B16",
+            "white": "#FDF6E3",
+            "yellow": "#657B83",
+            "brightCyan": "#2AA198",
+            "foreground": "#839496",
+            "brightGreen": "#859900",
+            "name": "Solarized Dark cmd",
+            "brightPurple": "#D33682",
+            "brightRed": "#DC322F",
+            "brightWhite": "#EEE8D5",
+            "brightYellow": "#B58900"
+          },
+        {
+            
+            "background" : "#002B36",
+            "black" : "#073642",
+            "blue" : "#268BD2",
+            "brightBlack" : "#002B36",
+            "brightBlue" : "#839496",
+            "brightCyan" : "#93A1A1",
+            "brightGreen" : "#586E75",
+            "brightPurple" : "#6C71C4",
+            "brightRed" : "#CB4B16",
+            "brightWhite" : "#FDF6E3",
+            "brightYellow" : "#657B83",
+            "cyan" : "#2AA198",
+            "foreground" : "#839496",
+            "green" : "#153f17",
+            "name" : "Solarized Dark",
+            "purple" : "#D33682",
+            "red" : "#DC322F",
+            "white" : "#EEE8D5",
+            "yellow" : "#B58900"
+        },
+        {
+            "name": "Argonaut",
+            "black": "#232323",
+            "red": "#ff000f",
+            "green": "#0e1019",
+            "yellow": "#ffb900",
+            "blue": "#008df8",
+            "purple": "#6d43a6",
+            "cyan": "#00d8eb",
+            "white": "#ffffff",
+            "brightBlack": "#444444",
+            "brightRed": "#ff2740",
+            "brightGreen": "#abe15b",
+            "brightYellow": "#ffd242",
+            "brightBlue": "#0092ff",
+            "brightPurple": "#9a5feb",
+            "brightCyan": "#67fff0",
+            "brightWhite": "#ffffff",
+            "background": "#0e1019",
+            "foreground": "#fffaf4"
+          }
+    ],
 
     // Add any keybinding overrides to this array.
     // To unbind a default keybinding, set the command to "unbound"
-    "keybindings":
-    [
-        { "command": "newTab", "keys": ["ctrl+t"]}
-    ]
+    "keybindings": []
 }

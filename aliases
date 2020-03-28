@@ -1,6 +1,6 @@
 # SSH alias to remove all keys, and kill the agent
 alias sk='ssh-add -D; ssh-agent -k'
-alias ll='ls -al'
+alias ll='ls -alF'
 
 # Doctl aliases
 alias docre='doctl.exe compute droplet create --size s-1vcpu-1gb --ssh-keys 47:87:89:75:e5:ce:62:00:e1:88:86:6b:1b:9e:8c:e6 --region fra1 --image'
